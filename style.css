@@ -1,0 +1,152 @@
+@font-face {
+  font-family: 'gameFont1';
+  src: url('./fonts/gameFont1.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gameFont2';
+  src: url('./fonts/gameFont2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(18, 18, 18);
+}
+#StartPanel{
+    background-color: rgba(255, 0, 0, 0);
+} 
+#LederBoardPanel{
+    background-color: rgba(255, 0, 0, 0);
+}
+
+#gameStaticCanvas{
+    position: absolute;
+    border: 2px rgb(255, 255, 255) solid;
+    background-color: rgb(31, 31, 31);
+    image-rendering: pixelated;
+}
+
+#gameCanvas{
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0);
+    image-rendering: pixelated;
+}
+#canvasesContainer{
+    width: 80%;
+    height: 90%;
+}
+#gameUI1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    margin-right: 2rem;
+}
+#holdUI{
+    width: 90%;
+    height: 30%;
+    background-color: rgb(70, 95, 106);
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8%;
+    border: white solid 0.2rem;
+    color: white;
+}
+#holdUI h1{
+    font-family: 'gameFont1';
+    margin: 0;
+    font-size: 1.5vw;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 0.2cap;
+}
+#holdUI img{
+    width: 80%;
+    height: 80%;
+}
+
+#scoreUI{
+    width: 90%;
+    height: 50%;
+    background-color: #550eda;
+    border-radius: 8%;
+    border: white solid 0.2rem;
+    margin-bottom: 10%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0rem;
+}
+
+
+#scoreUI h3,
+#scoreUI p {
+  font-family:'gameFont1',Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-size: 1.5vw;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 0.2cap;
+}
+
+#scoreUI h3:not(:first-child) {
+  margin-top: 1rem;
+}
+#scoreUI p{
+    font-weight: bold;
+    font-family:'gameFont2',Arial, Helvetica, sans-serif;
+}
+
+#gameUI2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    margin-left: 2rem;
+}
+
+
+#nextForms{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+     background-color: rgb(70, 95, 106);
+    margin-top: 10%;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1%;
+    border: white solid 0.2rem;
+    color: white;
+    
+}
+
+#nextForms img{
+    width: 60%;
+    height: 20%;
+}
+#nextForms h1{
+    font-family: 'gameFont1';
+    margin: 0;
+    font-size: 1.5vw;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 0.2cap;
+}
